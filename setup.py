@@ -1,9 +1,10 @@
 from setuptools import setup,Extension,find_packages
 
 ## GET VERSION
-import versiontools
-version = versiontools.get_python_version()
-
+#import versiontools
+#version = versiontools.get_python_version()
+import sys
+version = sys.version
 ## HANDLE CYTHON
 # Cython needs to be handled with care as PIP cannot know to install cython
 # *before* it gets to the setup.py. We handle this by following the suggestion
